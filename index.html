@@ -6,40 +6,67 @@
     <title>Hackday Mockup</title>
 </head>
 <body>
-    // heading
+    <!-- heading -->
     <div>
         <div>Username: Dob Dole</div>
         <div>My awesome app!</div>
         <div>Current time: 31:81</div>
     </div>
 
-    // main panel
+    <!-- main panel -->
     <div>
         <div>
             <div>
                 <div>Please complete the below form</div>
                 <div>Please go to <a href="">DWP Place</a> for more information about this form</div> 
             </div>
-            // Personal info 
+            <!-- Personal info --> 
             <div>
+                <form>
                 <div>Personal information</div>
-                <div>Name<input></div>
-                <div>Phone<input></div>
-                <div>Title<input></div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="title">Title</label>
+                    <select id="title" name="title">
+                        <option value="Mr">Mr</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Mrs">Mrs</option>
+                    </select>
+                    </div>
+                </form>
             </div>
 
-            //Dietary info
+            <!-- Dietary info -->
             <div>
-
+                <div>Dietary info</div>
+                <div>Favourite meal</div>
+                <div>
+                    <input type="radio" id="breakfast" name="meal" value="Breakfast">
+                    <label for="breakfast">Breakfast</label>
+                    <input type="radio" id="lunch" name="meal" value="lunch">
+                    <label for="breakfast">lunch</label>
+                    <input type="radio" id="tea" name="meal" value="tea">
+                    <label for="breakfast">tea</label>
+                </div>
+                <div>Allergens (tick all that apply)</div>   
+                <ul>
+                    <div><li>Nuts</li><input type="checkbox" id="nuts" name="nuts" value="nuts"></div>
+                    <div><input type="text"></div>
+                    <div><li>Gluten</li><input type="checkbox" id="gluten" name="gluten" value="gluten"></div>
+                    <div></div>
+                    <div><li>Dairy</li><input type="checkbox" id="dairy" name="dairy" value="dairy"></div>
+                    <div></div>
+                </ul>
             </div>
         </div>
-
-
-
-
-
-
-
         </div>
         <div></div>
     </div>
