@@ -1,6 +1,11 @@
+/* div {
+    border-style: solid;
+}
+*/
+
 html, body {
     height: 100%;
-  }
+}
   
   ul {
     margin: 0;
@@ -10,11 +15,71 @@ html, body {
     margin: 0;
   }
   
-  body {
-    margin: 0;
-  }
   
-  body {
-    margin: 0;
+  .Header {
+    display: flex;
+    background-color: #a9a9a9;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
   }
-  
+
+
+  .Header-text { 
+    font-size: larger;
+  }
+
+
+  .Image-Panel{
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    align-items: center;
+    min-width: 30%
+  }
+
+
+  .Form-Panel{
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    padding-left: 10px;   
+    width: 100%;
+    
+    
+  }
+
+  .Panel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-style: dotted;
+
+  }
+
+  .Subheading{
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .separator{
+    padding-top: 10px;
+  }
+
+  .submit{
+    padding-top: 10px;
+  }
+
+  .Main-Panel {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    width: 100%;
+
+  }
+
+  .img-spacing{
+    padding-top: 20px;
+  }
+
+
+

@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackday Mockup</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <!-- heading -->
-    <div>
-        <div>Username: Dob Dole</div>
-        <div>My awesome app!</div>
+    <div class="Header">
+        <div>Username: Bob Dole</div>
+        <div><h1>My awesome app!</h1></div>
         <div>Current time: 31:81</div>
     </div>
 
-    <!-- main panel -->
-    <div>
+<div class="Main-Panel">
+
+    <!-- column 1-->
+    <div class="Form-Panel">
         <div>
-            <div>
-                <div>Please complete the below form</div>
-                <div>Please go to <a href="">DWP Place</a> for more information about this form</div> 
+            <div class="Panel">
+                <div><h2>Please complete the below form</h2></div>
+                <div>Please go to <a href="https://dwp.service-now.com/login.do">DWP Place</a> for more information about this form</div> 
             </div>
             <!-- Personal info --> 
-            <div>
+            <div class="Panel">
                 <form>
-                <div>Personal information</div>
-                <div>
+                <div><h3>Personal Information</h3></div>
+                <div class="separator">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
                 </div>
-                <div>
+                <div class="separator">
                     <label for="phone">Phone</label>
                     <input type="text" id="phone" name="phone">
                 </div>
-                <div>
+                <div class="separator">
                     <label for="title">Title</label>
                     <select id="title" name="title">
                         <option value="Mr">Mr</option>
@@ -44,11 +47,11 @@
                 </form>
             </div>
 
-            <!-- Dietary info -->
-            <div>
-                <div>Dietary info</div>
-                <div>Favourite meal</div>
-                <div>
+             <!-- Dietary info -->
+             <div class="Panel">
+                <div><h3>Dietary info</h3></div>
+                <div class="Subheading">Favourite meal</div>
+                <div class="Diet-S1">
                     <input type="radio" id="breakfast" name="meal" value="Breakfast">
                     <label for="breakfast">Breakfast</label>
                     <input type="radio" id="lunch" name="meal" value="lunch">
@@ -56,15 +59,31 @@
                     <input type="radio" id="tea" name="meal" value="tea">
                     <label for="breakfast">tea</label>
                 </div>
-                <div>Allergens (tick all that apply)</div>   
+                <div class="Subheading">Allergens (tick all that apply)</div>   
                   <ul>
-                    <div><li>Nuts</li><input type="checkbox" id="nuts" name="nuts" value="nuts"></div>
-                    <div><li>Gluten</li><input type="checkbox" id="gluten" name="gluten" value="gluten"></div>
-                    <div><li>Dairy</li><input type="checkbox" id="dairy" name="dairy" value="dairy"></div>
+                    <div><li>Nuts<input type="checkbox" id="nuts" name="nuts" value="nuts"></li></div>
+                    <div><li>Gluten<input type="checkbox" id="gluten" name="gluten" value="gluten"></li></div>
+                    <div><li>Dairy<input type="checkbox" id="dairy" name="dairy" value="dairy"></li></div>
                     </ul>
                 </div>
             </div>
-        <div></div>
+
+            <div class="submit">
+                <button>Submit</button>
+            </div>
     </div>
+
+    <!-- Column 2-->
+    <div class="Image-Panel">
+        <div class="img-spacing"><img src="./images/santa.jpeg" alt="" width="200" height="200"></div>
+        <div class="img-spacing"><img src="./images/tree.jpeg" alt="" width="200" height="200"></div>
+        <div class="img-spacing"><img src="./images/rudolf.jpeg" alt="" width="200" height="200"></div>
+    </div>
+
+
+</div>
+
+
+
 </body>
 </html>
