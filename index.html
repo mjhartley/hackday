@@ -7,83 +7,89 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
+        <script type="text/javascript" charset="utf-8">
+        let a;
+        let time;
+        setInterval(() => {
+          a = new Date();
+          time = a.getHours() + ':' + a.getMinutes();
+          document.getElementById('time').innerHTML = time;
+        }, 1000);
+      </script>
+
     <!-- heading -->
     <div class="Header">
         <div>Username: Bob Dole</div>
-        <div><h1>My awesome app!</h1></div>
-        <div>Current time: 31:81</div>
+        <h1>My awesome app!</h1>
+        <div>Current time: <span id="time"></span></div>
     </div>
 
-<div class="Main-Panel">
+    <div class="Main-Panel">
 
-    <!-- column 1-->
-    <div class="Form-Panel">
-        <div>
-            <div class="Panel">
-                <div><h2>Please complete the below form</h2></div>
-                <div>Please go to <a href="https://dwp.service-now.com/login.do">DWP Place</a> for more information about this form</div> 
-            </div>
-            <!-- Personal info --> 
-            <div class="Panel">
-                <form>
-                <div><h3>Personal Information</h3></div>
-                <div class="separator">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+        <!-- column 1-->
+        <div class="Form-Panel">
+            <div>
+                <div class="Panel">
+                    <h2>Please complete the below form</h2>
+                    <div>Please go to <a href="https://dwp.service-now.com/login.do">DWP Place</a> for more information about this form</div> 
                 </div>
-                <div class="separator">
-                    <label for="phone">Phone</label>
-                    <input type="text" id="phone" name="phone">
-                </div>
-                <div class="separator">
-                    <label for="title">Title</label>
-                    <select id="title" name="title">
-                        <option value="Mr">Mr</option>
-                        <option value="Miss">Miss</option>
-                        <option value="Ms">Ms</option>
-                        <option value="Mrs">Mrs</option>
-                    </select>
+                <!-- Personal info --> 
+                <div class="Panel">
+                    <form>
+                    <h3>Personal Information</h3>
+                    <div class="separator">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
                     </div>
-                </form>
-            </div>
-
-             <!-- Dietary info -->
-             <div class="Panel">
-                <div><h3>Dietary info</h3></div>
-                <div class="Subheading">Favourite meal</div>
-                <div class="Diet-S1">
-                    <input type="radio" id="breakfast" name="meal" value="Breakfast">
-                    <label for="breakfast">Breakfast</label>
-                    <input type="radio" id="lunch" name="meal" value="lunch">
-                    <label for="breakfast">lunch</label>
-                    <input type="radio" id="tea" name="meal" value="tea">
-                    <label for="breakfast">tea</label>
+                    <div class="separator">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                    <div class="separator">
+                        <label for="title">Title</label>
+                        <select id="title" name="title">
+                            <option value="Mr">Mr</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mrs">Mrs</option>
+                        </select>
+                        </div>
+                    </form>
                 </div>
-                <div class="Subheading">Allergens (tick all that apply)</div>   
-                  <ul>
-                    <div><li>Nuts<input type="checkbox" id="nuts" name="nuts" value="nuts"></li></div>
-                    <div><li>Gluten<input type="checkbox" id="gluten" name="gluten" value="gluten"></li></div>
-                    <div><li>Dairy<input type="checkbox" id="dairy" name="dairy" value="dairy"></li></div>
-                    </ul>
+
+                <!-- Dietary info -->
+                <div class="Panel">
+                    <div><h3>Dietary info</h3></div>
+                    <div class="Subheading">Favourite meal</div>
+                    <div class="Diet-S1">
+                        <input type="radio" id="breakfast" name="meal" value="Breakfast">
+                        <label for="breakfast">Breakfast</label>
+                        <input type="radio" id="lunch" name="meal" value="lunch">
+                        <label for="breakfast">lunch</label>
+                        <input type="radio" id="tea" name="meal" value="tea">
+                        <label for="breakfast">tea</label>
+                    </div>
+                    <div class="Subheading">Allergens (tick all that apply)</div>   
+                    <ul>
+                        <li>Nuts<input type="checkbox" id="nuts" name="nuts" value="nuts"></li>
+                        <li>Gluten<input type="checkbox" id="gluten" name="gluten" value="gluten"></li>
+                        <li>Dairy<input type="checkbox" id="dairy" name="dairy" value="dairy"></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="submit">
-                <button>Submit</button>
-            </div>
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
+        </div>
+
+        <!-- Column 2-->
+        <div class="Image-Panel">
+            <div class="img-spacing"><img src="./images/santa.jpeg" alt="" width="200" height="200"></div>
+            <div class="img-spacing"><img src="./images/tree.jpeg" alt="" width="200" height="200"></div>
+            <div class="img-spacing"><img src="./images/rudolf.jpeg" alt="" width="200" height="200"></div>
+        </div>
     </div>
-
-    <!-- Column 2-->
-    <div class="Image-Panel">
-        <div class="img-spacing"><img src="./images/santa.jpeg" alt="" width="200" height="200"></div>
-        <div class="img-spacing"><img src="./images/tree.jpeg" alt="" width="200" height="200"></div>
-        <div class="img-spacing"><img src="./images/rudolf.jpeg" alt="" width="200" height="200"></div>
-    </div>
-
-
-</div>
-
-
-
 </body>
 </html>
